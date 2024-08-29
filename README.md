@@ -7,5 +7,9 @@ To solve this problem we introduce StyleSphere, a web platform integrated with a
 # Generative AI Model:
 The name of our generative ai model is StackGAN, a variant of Generative Adversarial Networks. This is a brief overview of how this model actually works. The model consists of two neural netwoks: The generator and the discriminator. The job of the generator is to generate a fake image from the text embedding vector and the discriminator tries to identify and differentiate the fake image from its corresponding real image. During the training process, the generator keeps generating fake images and tries to fool the discriminator by creating more realistic images. This process continues till the discriminator is unable to differentiate the two classes of image. At this point our model gets trained.
 
+# Mid Training Images:
+![image](https://github.com/user-attachments/assets/55f4726e-de3a-45e1-8e91-ad01094af821)
+
+
 # Implementation Details:
 We used DeepFashion dataset which contains Image-Caption Pairs for clothing items. After data pre-processing, we utilized pre-trained OpenAI CLIP model and fine-tuned it on the DeepFashion dataset to generate text embeddings for the captions. Finally, this data was fed to the StackGAN model to generate clothing images using the images as well as their text embeddings. For more information on the implementation details please refer to our research paper.
